@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adel Kaced PortFolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">PortFolio</a>
+      <div class="toggle"></div>
+      <ul>
+        <li><a href="#">Acceuil</a></li>
+        <li><a href="#">Presentation</li>
+        <li><a href="#">Competence</a></li>
+        <li><a href="#">Projets</a></li>
+        <li><a href="#">Ma recherche </a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+    </header>
+    <section class="banner">
+      <div class="textBx">
+        <h2>Bonjour je m'appelle <br /><span>Adel Kaced</span></h2>
+        <h3>Je suis develloppeur web full stack</h3>
+        <a href="#" class="btn">Presentation</a>
+      </div>
+    </section>
+    <section class="about">
+      <div class="heading">
+        <h2>Presentation</h2>
+      </div>
+      <div class="content ">
+        <div class="contentBx w50">
+            <h3>Je suis develloppeur web full stack</h3>
+            <p>
+                Après 8 années dans le domaine de la logistique, j'ai décidé d'entamer un tournant dans ma carrière. Curieux des nouvelles technologies et attiré par l'aspect technique et créatif, je me suis naturellement dirigé vers le métier de développeur web.
+            </p>
+        </div>
+        <div class="w50">
+         <img src="./images/maPhoto.jpg" class="img">
+      </div>
+    </section>
+<section class="services">
+    <div class="heading white">
+        <h2>Compétences</h2>
+        <p>Mes divers compétncess aejjrkskjv sgeb</p>
+    </div>
+    <div class="content"> 
+        <div class=serviceBx>
+           <img src="./images/react.png" >
+           <h2>Web design</h2>
+           <p>Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium </p>
+        </div>
+        <div class=serviceBx>
+            <img src="./images/react.png" >
+            <h2>Web design</h2>
+            <p>Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium </p>
+         </div>
+         <div class=serviceBx>
+            <img src="./images/react.png" >
+            <h2>Web design</h2>
+            <p>Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium </p>
+         </div>
+         <div class=serviceBx>
+            <img src="./images/react.png" >
+            <h2>Web design</h2>
+            <p>Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium </p>
+         </div>
+    </div>
+</section>
+<section class="work" >
+    <div class= "heading">
+        <h2>Projets</h2>
+        <p>Lorem elzpvve zevezmlvzevzêl ezlvvlêv kezvl</p>
+    </div>
+    <div class="content">
+        <div class="workBx">
+            <img src="product1.jpg">
+        </div>
+    </div>
+    <div class="content">
+        <div class="workBx">
+            <img src="product1.jpg">
+        </div>
+    </div>
+    <div class="content">
+        <div class="workBx">
+            <img src="product1.jpg">
+        </div>
+    </div>
+    <div class="content">
+        <div class="workBx">
+            <img src="product1.jpg">
+        </div>
+    </div>
+</section>
+
+    <script type="text/javascript">    
+    window.addEventListener('scroll', function(){
+        const header = document.querySelector('header');
+        header.classList.toggle('sticky', window.scrollY > 0);
+        console.log(window.scrollY)
+    })    
+    </script>
+  </body>
+</html>
