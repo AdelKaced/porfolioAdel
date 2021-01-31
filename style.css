@@ -5,9 +5,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
-.section {
+section {
   padding: 100px;
 }
 
@@ -62,9 +63,9 @@ header {
 }
 
 header.sticky {
-    background: #fff;
-    padding : 20px 100px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  background: #fff;
+  padding: 20px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 header .logo {
   color: #fff;
@@ -90,7 +91,7 @@ header ul li a {
 }
 
 header.sticky ul li a {
-    color : #111;
+  color: #111;
 }
 .heading {
   width: 100%;
@@ -107,9 +108,11 @@ header.sticky ul li a {
   display: flex;
   justify-content: space-between;
 }
-.contentBx 
-{
-padding-right: 30px;
+.contentBx {
+  padding-right: 30px;
+}
+.contentBx p {
+  text-align: justify
 }
 .contentBx h3 {
   font-size: 24px;
@@ -118,47 +121,297 @@ padding-right: 30px;
 .w50 {
   min-width: 50%;
   text-align: center;
-
 }
 .img {
   max-width: 100%;
- height :200px;  
-  
+  height: 200px;
 }
 
-.services{ 
-    background: #111;  
+.services {
+  background: #111;
 }
 .heading.white {
-    color : #fff;
+  color: #fff;
 }
 
 .services .content {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
-.services .content .serviceBx 
-{
-    padding : 40px 20px;
-    background: #222;
-    color : #fff ;
-    max-width: 340px;
-    margin:20px;
-    text-align: center;
-    transition: 0.5s;
+.services .content .serviceBx {
+  padding: 40px 20px;
+  background: #222;
+  color: #fff;
+  max-width: 340px;
+  margin: 20px;
+  text-align: center;
+  transition: 0.5s;
 }
-.services .content .serviceBx:hover{
-    background: #2196f3;
+.services .content .serviceBx:hover {
+  background: #2196f3;
 }
 .services .content .serviceBx img {
-    max-width: 80px;
-    filter: invert(1);
+  max-width: 80px;
+  filter: invert(1);
 }
 
 .services .content .serviceBx h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.work .content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.work .content .workBx {
+  width: 50%;
+  padding: 20px;
+}
+
+.work .content .workBx img {
+  max-width: 100%;
+}
+
+.testimonial {
+  background: #f7f7f7;
+}
+.testimonial .content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.testimonial .content .testimonialBx {
+  max-width: calc(50% - 40px);
+  padding: 60px 40px;
+  margin: 20px;
+  background: #2196f3;
+}
+.testimonial .content .testimonialBx p {
+  color: #fff;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 300;
+}
+.testimonial .content .testimonialBx h3 {
+  margin-top: 40px;
+  text-align: end;
+  color: #fff;
+  font-weight: 20px;
+  line-height: 1em;
+}
+
+.testimonial .content .testimonialBx h3 span {
+  font-size: 14px;
+  font-weight: 400;
+}
+.contact {
+  background: #111;
+}
+.formBx {
+  min-width: 60%;
+}
+
+.formBx form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formBx form h3,
+.contactInfo h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.formBx form input,
+.formBx form textarea {
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background: #222;
+  color: #fff;
+  resize: none;
+}
+.formBx form textarea {
+  min-height: 200px;
+}
+
+.formBx form input::placeholder,
+.formBx form textarea::placeholder {
+  color: #999;
+}
+.formBx form input[type='submit'] {
+  max-width: 100px;
+  background: #2196f3;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contactInfo {
+  min-width: 40%;
+}
+.contactInfoBX {
+  position: relative;
+}
+.contactInfo .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.contactInfo .box .icon {
+  min-height: 40px;
+  padding-top: 4px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 24px;
+}
+
+.contactInfo .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 20px;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 300;
+}
+.contactInfo .box .text h3 {
+  font-weight: 500;
+  color: #2196f3;
+  margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  header {
+    background: black;
+  }
+  header,
+  header.sticky {
+    padding: 20px 50px;
+  }
+  .menu {
+    position: fixed;
+    top: 75px;
+    left: -100%;
+    display: block;
+    padding: 100px 50px;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    transition: O.5s;
+    z-index: 999;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+  }
+  header ul li a {
+    color: #111;
+    font-size: 24px;
+    margin: 10px;
+  }
+  .toggle {
+    width: 40px;
+    height: 40px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+  }
+  .toggle.active {
+    background: url('https://cdn3.iconfinder.com/data/icons/ui-icons-5/16/cross-small-01-512.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+  }
+  header .toggle {
+    filter: invert(1);
+  }
+  .sticky .toggle {
+    filter: none;
+  }
+  .menu.active {
+    left: 0;
+  }
+  section {
+    padding: 100px 50px;
+  }
+  .banner {
+    padding: 150px 50px 100px;
+  }
+  .banner h2 {
+    font-size: 1.5em;
+  }
+  .banner h3 {
+    font-size: 1em;
+  }
+  .btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  .heading h2 {
+    font-size: 24px;
+  }
+  .contentBx h3 {
     font-size: 20px;
-    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .w50 {
+    margin-bottom: 20px;
+  }
+  .services .content .serviceBx {
+    margin: 10px;
+  }
+  .work .content .workBx {
+    width: 100%;
+    padding: 10px;
+  }
+  .testimonial .content .testimonialBx {
+    max-width: calc(100% - 20px);
+    padding: 40px 20px;
+    margin: 10px;
+    background: #2196f3;
+  }
+  .testimonial .content .testimonialBx h3{
+    margin-top:20px;
+}
+.contactInfo {
+  min-width:40px;
+  margin:20px 0;
+}
+}
+@media (max-width:600px) 
+{
+  .header,
+  .header.sticky 
+  {
+    padding: 20px 20px;
+
+  }
+  .banner {
+    padding: 150px 20px 100px ;
+  }
+  .section {
+    padding:100px 20px;
+  }
+
 }

@@ -1,107 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adel Kaced PortFolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <a href="#" class="logo">PortFolio</a>
-      <div class="toggle"></div>
-      <ul>
-        <li><a href="#">Acceuil</a></li>
-        <li><a href="#">Presentation</li>
-        <li><a href="#">Competence</a></li>
-        <li><a href="#">Projets</a></li>
-        <li><a href="#">Ma recherche </a></li>
-        <li><a href="#">Contacts</a></li>
-      </ul>
-    </header>
-    <section class="banner">
-      <div class="textBx">
-        <h2>Bonjour je m'appelle <br /><span>Adel Kaced</span></h2>
-        <h3>Je suis develloppeur web full stack</h3>
-        <a href="#" class="btn">Presentation</a>
-      </div>
-    </section>
-    <section class="about">
-      <div class="heading">
-        <h2>Presentation</h2>
-      </div>
-      <div class="content ">
-        <div class="contentBx w50">
-            <h3>Je suis develloppeur web full stack</h3>
-            <p>
-                Après 8 années dans le domaine de la logistique, j'ai décidé d'entamer un tournant dans ma carrière. Curieux des nouvelles technologies et attiré par l'aspect technique et créatif, je me suis naturellement dirigé vers le métier de développeur web.
-            </p>
-        </div>
-        <div class="w50">
-         <img src="./images/maPhoto.jpg" class="img">
-      </div>
-    </section>
-<section class="services">
-    <div class="heading white">
-        <h2>Compétences</h2>
-        <p>Mes divers compétncess aejjrkskjv sgeb</p>
-    </div>
-    <div class="content"> 
-        <div class=serviceBx>
-           <img src="./images/react.png" >
-           <h2>Web design</h2>
-           <p>Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium </p>
-        </div>
-        <div class=serviceBx>
-            <img src="./images/react.png" >
-            <h2>Web design</h2>
-            <p>Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium </p>
-         </div>
-         <div class=serviceBx>
-            <img src="./images/react.png" >
-            <h2>Web design</h2>
-            <p>Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium </p>
-         </div>
-         <div class=serviceBx>
-            <img src="./images/react.png" >
-            <h2>Web design</h2>
-            <p>Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium </p>
-         </div>
-    </div>
-</section>
-<section class="work" >
-    <div class= "heading">
-        <h2>Projets</h2>
-        <p>Lorem elzpvve zevezmlvzevzêl ezlvvlêv kezvl</p>
-    </div>
-    <div class="content">
-        <div class="workBx">
-            <img src="product1.jpg">
-        </div>
-    </div>
-    <div class="content">
-        <div class="workBx">
-            <img src="product1.jpg">
-        </div>
-    </div>
-    <div class="content">
-        <div class="workBx">
-            <img src="product1.jpg">
-        </div>
-    </div>
-    <div class="content">
-        <div class="workBx">
-            <img src="product1.jpg">
-        </div>
-    </div>
-</section>
 
-    <script type="text/javascript">    
-    window.addEventListener('scroll', function(){
-        const header = document.querySelector('header');
-        header.classList.toggle('sticky', window.scrollY > 0);
-        console.log(window.scrollY)
-    })    
-    </script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adel Kaced PortFolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo">PortFolio</a>
+    <div class="toggle" onclick=toggleMenu();></div>
+    <ul class="menu">
+      <li onclick=toggleMenu() ><a href="#home">Acceuil</a></li>
+      <li onclick=toggleMenu() ><a href="#presentation">Presentation</li>
+      <li onclick=toggleMenu() ><a href="#competence">Competence</a></li>
+      <li onclick=toggleMenu() ><a href="#projet">Projets</a></li>
+      <li onclick=toggleMenu() ><a href="#recherche">Ma recherche </a></li>
+      <li onclick=toggleMenu() ><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
+  <section class="banner" id="home">
+    <div class="textBx">
+      <h2>Bonjour je m'appelle <br /><span>Adel Kaced</span></h2>
+      <h3>Je suis develloppeur web full stack</h3>
+      <a href="#" class="btn">Presentation</a>
+    </div>
+  </section>
+  <section id="presentation" class="about">
+    <div class="heading">
+      <h2 >Presentation</h2>
+    </div>
+    <div class="content ">
+      <div class="contentBx w50">
+        <h3>Je suis develloppeur web full stack</h3>
+        <p>
+          Après 8 années dans le domaine de la logistique, j'ai décidé d'entamer un tournant dans ma carrière. Curieux
+          des nouvelles technologies et attiré par l'aspect technique et créatif, je me suis naturellement dirigé vers
+          le métier de développeur web.
+        </p>
+      </div>
+      <div class="w50">
+        <img src="./images/maPhoto.jpg" class="img">
+      </div>
+  </section>
+  <section id="competence" class="services">
+    <div class="heading white">
+      <h2>Compétences</h2>
+      <p>Mes divers compétncess aejjrkskjv sgeb</p>
+    </div>
+    <div class="content">
+      <div class=serviceBx>
+        <img src="./images/react.png">
+        <h2>Web design</h2>
+        <p>Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium </p>
+      </div>
+      <div class=serviceBx>
+        <img src="./images/react.png">
+        <h2>Web design</h2>
+        <p>Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium </p>
+      </div>
+      <div class=serviceBx>
+        <img src="./images/react.png">
+        <h2>Web design</h2>
+        <p>Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium </p>
+      </div>
+      <div class=serviceBx>
+        <img src="./images/react.png">
+        <h2>Web design</h2>
+        <p>Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium Lorem sipsium </p>
+      </div>
+    </div>
+  </section>
+  <section  id="projet" class="work">
+    <div class="heading">
+      <h2>Projets</h2>
+      <p>Lorem elzpvve zevezmlvzevzêl ezlvvlêv kezvl</p>
+    </div>
+    <div class="content">
+      <div class="workBx">
+        <img src='./images/photoprojet.png' />
+      </div>
+      <div class="workBx">
+        <img src='./images/photoprojet.png' />
+      </div>
+      <div class="workBx">
+        <img src='./images/photoprojet.png' />
+      </div>
+      <div class="workBx">
+        <img src='./images/photoprojet.png' />
+      </div>
+    </div>
+    <div class="heading">
+      <a href="#" class="btn">View More</a>
+    </div>
+  </section>
+
+  <section id="recherche" class="testimonial">
+    <div class="heading">
+      <h2>Ma recherche</h2>
+      <p>Lorem zzrbkrv zekevk zevkevvk ezvlvepzlzv zevlzelve zêlvêv lzve ez</p>
+    </div>
+    <div class="content">
+      <div class=testimonialBx>
+        <p>
+          Lorem zev Pzk sit emae srsosd zekev lerem ler ler ler ler ler ler ler ler ler ler ler ler ler ler ler ler ler
+          ler ler ler ler ler ler ler ler ler ler ler ler ler ler ler ler ler ler ler ler ler ler
+        </p>
+        <h3>SOmeone famous <br><span>Creative designer</span></h3>
+      </div>
+      <div class=testimonialBx>
+        <p>
+          Lorem zev Pzk sit emae srsosd zekev lerem ler ler ler ler ler ler ler ler ler ler ler ler ler ler ler ler ler
+          ler ler ler ler ler ler ler ler ler ler ler ler ler ler ler ler ler ler ler ler ler ler
+        </p>
+        <h3>SOmeone famous <br><span>Creative designer</span></h3>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <div class="heading white">
+      <h2>Contact US</h2>
+      <p>Lorem zzrbkrv zekevk zevkevvk ezvlvepzlzv zevlzelve zêlvêv lzve ez</p>
+    </div>
+    <div class="content">
+      <div class="contactInfo">
+        <h3>Contact Info </h3>
+        <div class="contactInfoBx">
+          <div class="box" >
+            <div class="icon">
+              <i class="fa fa-map-marker"></i>
+            </div>
+            <div class="text">
+              <h3>Adress</h3>
+              <p>95800 Cergy France </p>
+            </div>
+          </div>
+          <div class="box" >
+            <div class="icon">
+              <i class="fa fa-phone"></i>
+            </div>
+            <div class="text">
+              <h3>Phone</h3>
+              <p>06 52 54 36 21</p>
+            </div>
+          </div>
+          <div class="box" >
+            <div class="icon">
+              <i class="fa fa-envelope-o"></i>
+            </div>
+            <div class="text">
+              <h3>Email</h3>
+              <p> adel.kaced@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="formBx">
+          <form>
+            <h3>Message me</h3>
+            <input type="text" name="" placeholder="full Name"/>
+            <input type="email" name="" placeholder="email"/>
+            <textarea placeholder="your messsage"></textarea>
+            <input type="submit" value="SEND" />
+          </form>
+        </div>
+      </div>
+  </section>
+  <script type="text/javascript">
+    window.addEventListener('scroll', function () {
+      const header = document.querySelector('header');
+      header.classList.toggle('sticky', window.scrollY > 0);
+      console.log(window.scrollY)
+    })   
+    function toggleMenu () {
+      console.log('tooglee')
+      const menuToggle = document.querySelector('.toggle') ;
+      menuToggle.classList.toggle('active')
+      const menu = document.querySelector('.menu');
+      menu.classList.toggle('active');
+    }
+  </script>
+</body>
+
 </html>
