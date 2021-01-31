@@ -118,15 +118,28 @@ header.sticky ul li a {
   font-size: 24px;
   margin-bottom: 10px;
 }
-.w50 {
+
+.zoom {
   min-width: 50%;
   text-align: center;
 }
+.w50 {
+  width: 100%;
+  height: 100%;
+}
 .img {
-  max-width: 100%;
-  height: 200px;
+  /* max-width: 100%; */
+  height: 220px;
+  transition: all 1s ease;
+}
+.img:hover 
+{
+  transform:scale(1.25);
 }
 
+.htmlimg {
+  margin-right: 20px;
+}
 .services {
   background: #111;
 }
@@ -155,7 +168,6 @@ header.sticky ul li a {
 }
 .services .content .serviceBx img {
   max-width: 80px;
-  filter: invert(1);
 }
 
 .services .content .serviceBx h2 {
@@ -188,9 +200,9 @@ header.sticky ul li a {
 }
 
 .testimonial .content .testimonialBx {
-  max-width: calc(50% - 40px);
+  /* max-width: calc(50% - 40px); */
   padding: 60px 40px;
-  margin: 20px;
+  /* margin: 20px; */
   background: #2196f3;
 }
 .testimonial .content .testimonialBx p {
@@ -198,6 +210,7 @@ header.sticky ul li a {
   font-style: italic;
   font-size: 16px;
   font-weight: 300;
+  text-align: center;
 }
 .testimonial .content .testimonialBx h3 {
   margin-top: 40px;
@@ -292,6 +305,15 @@ header.sticky ul li a {
   font-weight: 500;
   color: #2196f3;
   margin-bottom: 0;
+}
+
+.annonce {
+  display:  block !important;
+}
+.linkedin
+{
+  text-decoration: none;
+  color :#fff
 }
 
 /* Responsive */
@@ -398,7 +420,10 @@ header.sticky ul li a {
   min-width:40px;
   margin:20px 0;
 }
+.testimonial .content .testimonialBx p {
+  text-align: justify;
 }
+
 @media (max-width:600px) 
 {
   .header,
